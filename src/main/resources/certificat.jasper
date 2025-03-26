@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="Certificat"
+              pageWidth="595" pageHeight="842" columnWidth="555"
+              leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+
+    <title>
+        <band height="50">
+            <staticText>
+                <reportElement x="200" y="10" width="200" height="30"/>
+                <textElement>
+                    <font size="18" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Certificat de Réussite]]></text>
+            </staticText>
+        </band>
+    </title>
+
+    <detail>
+        <band height="150">
+            <textField>
+                <reportElement x="50" y="50" width="500" height="30"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String">
+                    <![CDATA["Ce certificat est attribué à " + $P{name} + " pour sa réussite."]]>
+                </textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+
+</jasperReport>
