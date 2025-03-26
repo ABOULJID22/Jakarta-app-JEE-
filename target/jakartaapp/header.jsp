@@ -28,7 +28,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                         <a href="<%= request.getContextPath() %>/book" class="nav-link">book</a>
+                         <a href="<%= request.getContextPath() %>/books" class="nav-link">book</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

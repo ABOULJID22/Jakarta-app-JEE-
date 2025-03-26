@@ -47,6 +47,17 @@
 
 
  
+<servlet>
+    <servlet-name>GenerateCertificateServlet</servlet-name>
+    <servlet-class>com.example.controller.GenerateCertificateServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>GenerateCertificateServlet</servlet-name>
+    <url-pattern>/generate-certificate</url-pattern>
+</servlet-mapping>
+
+
 
   <!-- Page d'accueil -->
   <welcome-file-list>

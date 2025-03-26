@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Login</h1>
-    <form action="login" method="POST">
-        <label for="email">Email:</label>
-        <input type="email" name="email" required><br><br>
-        
-        <label for="password">Password:</label>
-        <input type="password" name="password" required><br><br>
-        
-        <input type="submit" value="Login">
-    </form>
-
-    <c:if test="${param.error != null}">
-        <p style="color: red;">Invalid credentials, please try again.</p>
-    </c:if>
-    
-    <a href="signup.jsp">Don't have an account? Sign up here.</a>
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="card p-4 shadow-lg" style="width: 350px;">
+        <h2 class="text-center mb-4">Login</h2>
+        <form action="login" method="POST">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" name="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+        <div class="text-center mt-3">
+            <a href="signup.jsp">Don't have an account? Sign up here.</a>
+        </div>
+    </div>
 </body>
 </html>
