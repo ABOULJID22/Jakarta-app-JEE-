@@ -1,6 +1,6 @@
 # Jakarta-app-JEE-
 
->mvn archetype:generate -DgroupId=com.example -DartifactId=jakartaapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+execute in CMD >mvn archetype:generate -DgroupId=com.example -DartifactId=jakartaapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 >cd  jakrtaapp
 >code .
 >npm init -y
