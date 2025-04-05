@@ -1,4 +1,4 @@
-Sure! Here's a `README.md` template for your Jakarta EE project based on the instructions you provided. This template includes essential sections such as project description, setup, usage, and dependencies.
+This template includes essential sections such as project description, setup, usage, and dependencies.
 
 ```markdown
 # Jakarta-app-JEE
